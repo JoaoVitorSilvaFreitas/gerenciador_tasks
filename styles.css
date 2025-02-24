@@ -77,11 +77,11 @@ body {
 
 .linha_task {
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
     width: 300px;
     height: 50px;
+    padding: 5px;
     margin-top: 10px;
     background-color: var(--cor-cinza);
     border-radius: 8px;
@@ -115,5 +115,6 @@ body {
 
 .task_text {
     font-size: 0.8rem;
+    width: 70%;
+    margin-left: 15px;
 }
-
