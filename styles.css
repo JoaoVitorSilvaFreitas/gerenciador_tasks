@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+:root {
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --cor-primaria:#03614b;
+    --cor-secundaria:#06735c;
+    --cor-tercearia:#08846c;
+    --cor-hover:#0b957c;
+    --cor-cinza: #d2d2d2;
+    --cor-vPrimario:#eb2929;
+    --cor-vSecundario:#ee3f3f;
+    --cor-vTerceario:#ee5252;
+    --fonte-principal: "JetBrains Mono", monospace;
+}
+
+* {
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background: url(./resources/background.jpg);
+    background-size: cover;
+    background-repeat: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_addTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: var(--cor-cinza);
+    border-radius: 8px;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+}
+
+.input_task {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    width: 75%;
+}
+
+#btn_add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    cursor: pointer;
+    color: var(--cor-branca);
+    background-color: var(--cor-primaria);
+    width: 25px;
+    height: 25px;
+}
+
+#btn_add:hover {
+    background-color: var(--cor-secundaria);
+}
+
+#btn_add:active{
+    background-color: var(--cor-hover);
+}
+
+.linha_task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: var(--cor-cinza);
+    border-radius: 8px;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    font-family: var(--fonte-principal);
+}
+
+#btn_finishTask {
+    color: var(--cor-primaria);
+}
+
+#btn_finishTask:hover {
+    color: var(--cor-secundaria);
+}
+
+#btn_finishTask:active {
+    color: var(--cor-hover);
+}
+
+#btn_dropTask {
+    color: var(--cor-vPrimario);
+}
+
+#btn_dropTask:hover {
+    color: var(--cor-vSecundario);
+}
+
+#btn_dropTask:active {
+    color: var(--cor-vTerceario);
+}
+
+.task_text {
+    font-size: 0.8rem;
+}
+
